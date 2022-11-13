@@ -22,7 +22,7 @@ class Functions
     );
   }
 
-  // W H I C H  U I  I S  A P P R E H E N S I B L E
+  // W H I C H  U I  I S  A P P R E H E N S I B L E ?
   TextStyle question()
   {
     return TextStyle
