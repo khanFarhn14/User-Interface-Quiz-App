@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../functions.dart';
 
@@ -17,8 +16,10 @@ class _HomeiPadProState extends State<HomeiPadPro> {
   Widget build(BuildContext context) {
     return Scaffold
     (
+      // A P P  B A R
       appBar: AppBar
       (
+        elevation: 0,
         title:  Text
         (
           "User Interface Quiz",
@@ -29,6 +30,27 @@ class _HomeiPadProState extends State<HomeiPadPro> {
       ),
 
       backgroundColor: Functions().dominant,
+
+      body: Container
+      (
+        alignment: Alignment.center,
+        child: ListView
+        (
+          scrollDirection: Axis.vertical,
+          children:
+          [
+            SizedBox(height: 30.w,),
+            Center
+            (
+              child: Text
+              (
+                "Which UI is Apprehensible ?",
+                style: Functions().question()
+              ),
+            ),
+          ],
+        )
+      )
     );
   }
 }

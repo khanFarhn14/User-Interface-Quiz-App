@@ -9,6 +9,8 @@ class Functions
   final descrptnCard = const Color(0xffDEDFE1);
   final wrong = const Color(0xffA41215);
   final right = const Color(0xff00C013);
+
+  // U S E R  I N T E R F A C E  Q U I Z
   TextStyle appBarHeadng()
   {
     return TextStyle
@@ -18,5 +20,16 @@ class Functions
       letterSpacing: 3.5,
       color: dominant,
     );
-  } 
+  }
+
+  // W H I C H  U I  I S  A P P R E H E N S I B L E
+  TextStyle question()
+  {
+    return TextStyle
+    (
+      fontFamily: 'InterSemiBold',
+      fontSize: 15.sp,
+      color: secondary
+    );
+  }
 }
