@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../functions.dart';
+import 'card_apprehensible.dart';
 
 class HomeiPadPro extends StatefulWidget 
 {
@@ -48,6 +49,13 @@ class _HomeiPadProState extends State<HomeiPadPro> {
                 style: Functions().question()
               ),
             ),
+
+            SizedBox(height: 30.w,),
+
+            Center 
+            (
+              child: CardApprhnsble(),
+            )
           ],
         )
       )

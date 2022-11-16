@@ -32,4 +32,26 @@ class Functions
       color: secondary
     );
   }
+
+  // C O N T E N T  H E A D I N G
+  TextStyle contntHedng()
+  {
+    return TextStyle
+    (
+      fontFamily: 'InterExtraBold',
+      fontSize: 15.sp,
+      color: secondary,
+    );
+  }
+
+  // D E S C R I P T I O N
+  TextStyle description()
+  {
+    return TextStyle
+    (
+      fontFamily: 'InterRegular',
+      fontSize: 10.sp,
+      color: secondary.withOpacity(0.7),
+    );
+  }
 }
