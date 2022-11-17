@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:user_interface_quiz_app/HOME%20iPad%20Pro/card_not_apprehensible.dart';
 
 import '../functions.dart';
 import 'card_apprehensible.dart';
@@ -55,7 +56,17 @@ class _HomeiPadProState extends State<HomeiPadPro> {
             Center 
             (
               child: CardApprhnsble(),
-            )
+            ),
+
+            SizedBox(height: 30.w,),
+
+            Center
+            (
+              child: CardNtApprhnsble(),
+            ),
+
+            SizedBox(height: 30.w,),
+
           ],
         )
       )

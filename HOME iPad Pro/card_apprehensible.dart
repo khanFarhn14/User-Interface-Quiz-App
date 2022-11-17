@@ -1,16 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../functions.dart';
 import 'package:figma_squircle/figma_squircle.dart';
 
 import 'descrptn_smoothing.dart';
 
 
+// ignore: must_be_immutable
 class CardApprhnsble extends StatelessWidget 
 {
   CardApprhnsble({Key? key}) : super(key: key);
   double cardWidth = 212.w;
-  double cardHeight = 320.h;
+  double cardHeight = 316.h;
 
   @override
   Widget build(BuildContext context) 
@@ -24,8 +24,10 @@ class CardApprhnsble extends StatelessWidget
         (
           // P e r s o n a l i z a t i o n  o f  t h e  C o n t a i n e r
           alignment: Alignment.center,
-          width: cardWidth,
-          height: cardHeight,
+          // width: cardWidth,
+          width: MediaQuery.of(context).size.width * 0.58,
+          // height: cardHeight,
+          height: MediaQuery.of(context).size.height * 0.49,
           decoration: ShapeDecoration
           (
             color: const Color(0xff000000),
@@ -33,30 +35,37 @@ class CardApprhnsble extends StatelessWidget
             [
               BoxShadow
               (
-                color: const Color.fromARGB(255, 119, 119, 119).withOpacity(0.4),
-                offset: const Offset(10, 5),
-                blurRadius: 10,
+                color: const Color(0xff000000).withOpacity(0.01),
+                offset: Offset(58.w, 105.h),
+                blurRadius: 48,
               ),
 
               BoxShadow
               (
-                color: const Color.fromARGB(255, 119, 119, 119).withOpacity(0.3),
-                offset: const Offset(15, 10),
-                blurRadius: 20,
+                color: const Color(0xff000000).withOpacity(0.05),
+                offset: Offset(33.w, 59.h),
+                blurRadius: 41,
               ),
 
               BoxShadow
               (
-                color: const Color.fromARGB(255, 119, 119, 119).withOpacity(0.2),
-                offset: const Offset(20, 15),
+                color: const Color(0xff000000).withOpacity(0.09),
+                offset: Offset(14.w, 26.h),
                 blurRadius: 30,
               ),
 
               BoxShadow
               (
-                color: const Color.fromARGB(255, 119, 119, 119).withOpacity(0.1),
-                offset: const Offset(20, 15),
-                blurRadius: 30,
+                color: const Color(0xff000000).withOpacity(0.10),
+                offset: const Offset(4, 7),
+                blurRadius: 17,
+              ),
+
+              BoxShadow
+              (
+                color: const Color(0xff000000).withOpacity(0.10),
+                offset: const Offset(0, 0),
+                blurRadius: 0,
               ),
             ],
 
@@ -76,7 +85,7 @@ class CardApprhnsble extends StatelessWidget
             children:
             [
               const SizedBox(height: 20,),
-              Image.asset('assets/iPad Pro.jpg', width: 150.w,)
+              Image.asset('assets/iPad Pro.jpg', width: 150.w,height: 158.09.h,)
             ]
           ),
         ),
@@ -87,7 +96,7 @@ class CardApprhnsble extends StatelessWidget
           (
             bottom: 0,
 
-            child: DescrptnCard()
+            child: DescrptnCardApprnhsble()
           ),
       ],
     );
