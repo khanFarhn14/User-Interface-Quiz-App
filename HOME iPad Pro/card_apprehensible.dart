@@ -24,10 +24,8 @@ class CardApprhnsble extends StatelessWidget
         (
           // P e r s o n a l i z a t i o n  o f  t h e  C o n t a i n e r
           alignment: Alignment.center,
-          // width: cardWidth,
-          width: MediaQuery.of(context).size.width * 0.58,
-          // height: cardHeight,
-          height: MediaQuery.of(context).size.height * 0.49,
+          width: cardWidth,
+          height: cardHeight,
           decoration: ShapeDecoration
           (
             color: const Color(0xff000000),

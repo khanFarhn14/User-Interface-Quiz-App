@@ -15,10 +15,9 @@ class DescrptnCardApprnhsble extends StatelessWidget
     return SmoothContainer
     (
       // D E C O R A T I O N  O F  D E S C R I P T I O N  C A R D
-      // width: CardApprhnsble().cardWidth,
-      width: MediaQuery.of(context).size.width * 0.58,
-      // height: 128.w,
-      height: MediaQuery.of(context).size.height * 0.2,
+      width: CardApprhnsble().cardWidth,
+      height: 128.w,
+      
       smoothness: 0.9,
       borderRadius: BorderRadius.only
       (

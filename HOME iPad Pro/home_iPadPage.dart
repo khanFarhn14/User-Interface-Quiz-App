@@ -41,7 +41,7 @@ class _HomeiPadProState extends State<HomeiPadPro> {
           scrollDirection: Axis.vertical,
           children:
           [
-            SizedBox(height: 30.w,),
+            SizedBox(height: 30.h,),
             Center
             (
               child: Text
@@ -51,21 +51,21 @@ class _HomeiPadProState extends State<HomeiPadPro> {
               ),
             ),
 
-            SizedBox(height: 30.w,),
+            SizedBox(height: 30.h,),
 
             Center 
             (
               child: CardApprhnsble(),
             ),
 
-            SizedBox(height: 30.w,),
+            SizedBox(height: 30.h,),
 
             Center
             (
               child: CardNtApprhnsble(),
             ),
 
-            SizedBox(height: 30.w,),
+            SizedBox(height: 30.h,),
 
           ],
         )
