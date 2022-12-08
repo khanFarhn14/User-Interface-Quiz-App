@@ -1,9 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_corner/smooth_corner.dart';
-import '../functions.dart';
+import '../../../functions.dart';
 import 'card_apprehensible.dart';
 
+double height = 100.h;
 
 // ignore: must_be_immutable
 class DescrptnCardApprnhsble extends StatelessWidget 
@@ -16,9 +17,10 @@ class DescrptnCardApprnhsble extends StatelessWidget
     (
       // D E C O R A T I O N  O F  D E S C R I P T I O N  C A R D
       width: CardApprhnsble().cardWidth,
-      height: 128.w,
+      height: height,
       
       smoothness: 0.9,
+      
       borderRadius: BorderRadius.only
       (
         bottomLeft: Radius.circular(15.r),
@@ -50,8 +52,10 @@ class DescrptnCardNtApprnhsble extends StatelessWidget
     (
       // D E C O R A T I O N  O F  D E S C R I P T I O N  C A R D
       width: CardApprhnsble().cardWidth,
-      height: 128.w,
+      height: height,
+
       smoothness: 0.9,
+
       borderRadius: BorderRadius.only
       (
         bottomLeft: Radius.circular(15.r),

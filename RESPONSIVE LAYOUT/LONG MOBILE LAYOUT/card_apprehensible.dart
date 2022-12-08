@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:figma_squircle/figma_squircle.dart';
-
 import 'descrptn_smoothing.dart';
 
 
@@ -9,8 +8,9 @@ import 'descrptn_smoothing.dart';
 class CardApprhnsble extends StatelessWidget 
 {
   CardApprhnsble({Key? key}) : super(key: key);
+
   double cardWidth = 212.w;
-  double cardHeight = 316.h;
+  double cardHeight = 255.h;
 
   @override
   Widget build(BuildContext context) 
@@ -18,6 +18,7 @@ class CardApprhnsble extends StatelessWidget
     return Stack
     (
       fit: StackFit.loose,
+
       children: 
       [
         Container
@@ -26,6 +27,7 @@ class CardApprhnsble extends StatelessWidget
           alignment: Alignment.center,
           width: cardWidth,
           height: cardHeight,
+
           decoration: ShapeDecoration
           (
             color: const Color(0xff000000),
@@ -83,11 +85,10 @@ class CardApprhnsble extends StatelessWidget
             children:
             [
               const SizedBox(height: 20,),
-              Image.asset('assets/iPad Pro.jpg', width: 150.w,height: 158.09.h,)
+              Image.asset('assets/iPad Pro.jpg', width: 150.w)
             ]
           ),
         ),
-
 
          // B O T T O M  D E S C R I P T I O N
           Positioned

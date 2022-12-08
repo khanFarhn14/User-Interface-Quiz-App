@@ -51,7 +51,7 @@ class Functions
     (
       fontFamily: 'InterRegular',
       fontSize: 10.sp,
-      color: secondary.withOpacity(0.7),
+      color: secondary,
     );
   }
 }

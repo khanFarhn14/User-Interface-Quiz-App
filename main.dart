@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'HOME iPad Pro/home_iPadPage.dart';
+import 'home.dart';
 
 void main() {
   runApp
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget
       builder: (context, child) => const MaterialApp
       (
         debugShowCheckedModeBanner: false,
-        home: (HomeiPadPro())
+        home: (Home())
       ),
       designSize: const Size(360,640),
     );

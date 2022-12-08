@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:user_interface_quiz_app/HOME%20iPad%20Pro/card_not_apprehensible.dart';
 
-import '../functions.dart';
+import '../../../functions.dart';
 import 'card_apprehensible.dart';
+import 'card_not_apprehensible.dart';
 
-class HomeiPadPro extends StatefulWidget 
+class HomeiPadProSmall extends StatefulWidget 
 {
-  const HomeiPadPro({Key? key}) : super(key: key);
+  const HomeiPadProSmall({Key? key}) : super(key: key);
 
   @override
-  State<HomeiPadPro> createState() => _HomeiPadProState();
+  State<HomeiPadProSmall> createState() => _HomeiPadProSmallState();
 }
 
-class _HomeiPadProState extends State<HomeiPadPro> {
+class _HomeiPadProSmallState extends State<HomeiPadProSmall> {
   @override
   Widget build(BuildContext context) {
     return Scaffold
