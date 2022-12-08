@@ -17,7 +17,7 @@ class Functions
     (
       fontFamily: 'InterExtraBold',
       fontSize: 18.sp,
-      letterSpacing: 3.5,
+      letterSpacing: 2.5,
       color: dominant,
     );
   }
@@ -52,6 +52,28 @@ class Functions
       fontFamily: 'InterRegular',
       fontSize: 10.sp,
       color: secondary,
+    );
+  }
+
+  // A P P R E H E N S I B L E
+  TextStyle Apprehensible()
+  {
+    return TextStyle
+    (
+      fontFamily: 'InterSemiBold',
+      fontSize: 15.sp,
+      color: right
+    );
+  }
+
+  // A P P R E H E N S I B L E  E X P L A I N 
+  TextStyle ApprehensibleExplain()
+  {
+    return TextStyle
+    (
+      fontFamily: 'InterRegular',
+      fontSize: 8.sp,
+      color: secondary
     );
   }
 }

@@ -4,7 +4,7 @@ import 'package:smooth_corner/smooth_corner.dart';
 import '../../../functions.dart';
 import 'card_apprehensible.dart';
 
-double height = 100.h;
+double height = 120.h;
 
 // ignore: must_be_immutable
 class DescrptnCardApprnhsble extends StatelessWidget 
