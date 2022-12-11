@@ -79,7 +79,7 @@ class DescrptnCardNtApprnhsble extends StatelessWidget
 // ignore: must_be_immutable
 class ApprnhnsbleDescrptn extends StatelessWidget
 {
-  int spacing = 10;
+  int spacing = 5;
   ApprnhnsbleDescrptn({Key? key}) : super(key: key);
 
   @override
@@ -142,7 +142,7 @@ class ApprnhnsbleDescrptn extends StatelessWidget
 // ignore: must_be_immutable
 class NotApprnhnsbleDescrptn extends StatelessWidget
 {
-  int spacing = 10;
+  int spacing = 5;
   NotApprnhnsbleDescrptn({Key? key}) : super(key: key);
 
   @override

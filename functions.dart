@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:smooth_corner/smooth_corner.dart';
 class Functions
 {
   // C o l o r  S e t u p
@@ -61,7 +62,7 @@ class Functions
     return TextStyle
     (
       fontFamily: 'InterSemiBold',
-      fontSize: 15.sp,
+      fontSize: 18.sp,
       color: right
     );
   }
@@ -74,6 +75,53 @@ class Functions
       fontFamily: 'InterRegular',
       fontSize: 8.sp,
       color: secondary
+    );
+  }
+
+  // N E X T  B U T T O N
+  TextStyle next()
+  {
+    return TextStyle
+    (
+      fontFamily: 'InterBlack',
+      fontSize: 15.sp,
+      color: dominant
+    );
+  }
+
+  TextStyle notApprehensible() 
+  {
+    return TextStyle
+    (
+      fontFamily: 'InterSemiBold',
+      fontSize: 18.sp,
+      color: wrong
+    );
+  }
+}
+
+
+
+class NextButtn extends StatelessWidget {
+  const NextButtn({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SmoothContainer
+    (
+      width: 75.w,
+      height: 60.h,
+      color: Functions().secondary,
+      smoothness: 0.9,
+      borderRadius: BorderRadius.circular(10.r), //here didn't verify
+      child: Center
+      (
+        child: Text
+        (
+          "Next",
+          style: Functions().next(),
+        ),
+      )
     );
   }
 }

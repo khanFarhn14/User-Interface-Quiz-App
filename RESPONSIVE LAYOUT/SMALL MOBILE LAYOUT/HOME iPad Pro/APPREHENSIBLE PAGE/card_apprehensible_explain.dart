@@ -1,10 +1,12 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:figma_squircle/figma_squircle.dart';
 import '../../../../functions.dart';
-import 'descrptn_smoothing.dart';
+import 'descrptn_smoothing_apprehensible.dart';
 
-
+double gapBetwnRow = 5;
+int spacingInDescrptn = 10;
 // ignore: must_be_immutable
 class CardApprhnsbleExplain extends StatelessWidget 
 {
@@ -18,7 +20,8 @@ class CardApprhnsbleExplain extends StatelessWidget
   {
     return Stack
     (
-      fit: StackFit.loose,
+      clipBehavior: Clip.none,
+      // fit: StackFit.loose,
       children: 
       [
         Container
@@ -99,14 +102,16 @@ class CardApprhnsbleExplain extends StatelessWidget
           child: DescrptnCardApprnhsble()
         ),
 
+        // C O N T E N T
         Positioned
         (
-          bottom: 5,
+          bottom: 15.h,
           child: Padding
           (
-            padding: EdgeInsets.fromLTRB(5.w,0,0,0),
+            padding: EdgeInsets.fromLTRB(10.w,0,0,0),
             child: Column
             (
+              // mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: 
               [
@@ -139,26 +144,171 @@ class CardApprhnsbleExplain extends StatelessWidget
                     // H O R I Z O N T A L  L I N E
                     Padding
                     (
-                      padding:const EdgeInsets.symmetric(horizontal:5.0),
+                      padding: EdgeInsets.symmetric(horizontal: gapBetwnRow),
                       child: Container
                       (
                         height:1.0,
-                        width:100.0,
+                        width:150.0,
                         color:const Color(0xff000000),
                       ),
                     ),
 
                     SizedBox
                     (
-                      width: 150,
+                      width: 98.h,
                       child: Text
                       (
-                        "First the product name",
+                        "Name of the product \nAfter reading this, user \nwill have many questions.",
                         style: Functions().ApprehensibleExplain(),
                       ),
                     ),
                   ],
+                ),
+
+                SizedBox(height: spacingInDescrptn.h,),
+
+                // D E S C R I P T I O N  O F  T H E  P R O D U C T
+                Row
+                (
+                  children: 
+                  [
+                    // Front-facing camera. iPad Pro features...
+                    Container
+                    (
+                      width: 185.w,
+                      padding: const EdgeInsets.all(5.0),
+                      decoration: BoxDecoration
+                      (
+                        border: Border.all
+                        (
+                          color: Functions().right,
+                          width: 1.4
+                        ),
+                        borderRadius: BorderRadius.circular(4.5),
+                      ),
+                      child: RichText
+                      (
+                        text: TextSpan
+                        (
+                          text: 'Front-facing camera. iPad Pro features an Ultra Wide camera with a 12MP sensor and...',
+                          style: Functions().description(),
+                          children: <TextSpan>
+                          [
+                            TextSpan
+                            (
+                              text: 'Read More',
+                              style: TextStyle
+                              (
+                                fontFamily: 'InterRegular',
+                                fontSize: 10.sp,
+                                color: Functions().secondary,
+                              ),
+                            ),
+                          ]
+                        )
+                      ),
+                    ),
+
+                    //Horizontal Line
+                    Padding
+                    (
+                      padding: EdgeInsets.symmetric(horizontal:gapBetwnRow),
+                      child: Container
+                      (
+                        height:1.0,
+                        width:35,
+                        color:Functions().secondary,
+                      ),
+                    ),
+
+                    //Explaining the Description
+                    SizedBox
+                    (
+                      width: 98.w,
+                      child: Text
+                      (
+                        "User\nunderstanding the\nWhat &\nWhy of the Product",
+                        style: Functions().ApprehensibleExplain(),
+                      ),
+                    ),
+                  ],
+                ),
+
+                SizedBox(height: spacingInDescrptn.h,),
+
+                Row
+                (
+                  children: 
+                  [
+                    // P R I C E
+                    Container
+                    (
+                      padding: const EdgeInsets.all(8.0),
+                      decoration: BoxDecoration
+                      (
+                        border: Border.all
+                        (
+                          color: Functions().right,
+                          width: 1.4
+                        ),
+                        borderRadius: BorderRadius.circular(4.5),
+                      ),
+
+                      //Text
+                      child: Text
+                      (
+                        "\$799",
+                        style: TextStyle
+                        (
+                          fontFamily: 'InterSemiBold',
+                          fontSize: 12.sp,
+                          color: Functions().secondary.withOpacity(0.7),
+                        )
+                      ),
+                    ),
+
+                    //Horizontal Line
+                    Padding
+                    (
+                      padding: EdgeInsets.symmetric(horizontal:gapBetwnRow),
+                      child: Container
+                      (
+                        height:1.0,
+                        width:176,
+                        color: Functions().secondary,
+                      ),
+                    ),
+
+                    //Explaining the Description
+                    Stack
+                    (
+                      clipBehavior: Clip.none,
+                      alignment: Alignment.bottomCenter,
+                      children: 
+                      [
+                        SizedBox
+                        (
+                          width: 98.w,
+                          height: 20,
+                        ),
+                        Positioned
+                        (
+                          bottom: -30,
+                          child: SizedBox
+                          (
+                            width: 98.w,
+                            child: Text
+                            (
+                              "In the end, the price\ncomes into play. User\ncan take an informed\ndecision when he\\she\nknows the what and why\nof the product.",
+                              style: Functions().ApprehensibleExplain(),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  ],
                 )
+
                 
               ],
             ),

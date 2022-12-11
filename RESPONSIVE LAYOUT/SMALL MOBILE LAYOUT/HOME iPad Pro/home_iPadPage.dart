@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../functions.dart';
+import 'APPREHENSIBLE PAGE/home_apprehensible_page.dart';
+import 'NOT APPREHENSIBLE PAGE/home_not_apprehensible_page.dart';
 import 'card_apprehensible.dart';
 import 'card_not_apprehensible.dart';
 
@@ -55,14 +57,29 @@ class _HomeiPadProSmallState extends State<HomeiPadProSmall> {
 
             Center 
             (
-              child: CardApprhnsble(),
+              child: InkWell
+              (
+                onTap:()
+                {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const ApprehensiblePage()));
+                },
+                child: CardApprhnsble()
+              ),
             ),
 
             SizedBox(height: 30.h,),
 
             Center
             (
-              child: CardNtApprhnsble(),
+              child: InkWell
+              (
+                onTap:()
+                {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const NotApprehensiblePage()));
+                  
+                },
+                child: CardNtApprhnsble()
+              ),
             ),
 
             SizedBox(height: 30.h,),

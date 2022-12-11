@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import '../../../../functions.dart';
-import 'card_apprehensible_explain.dart';
+import 'card_not_apprehensible_explain.dart';
 
-class ApprehensiblePage extends StatelessWidget {
-  const ApprehensiblePage({Key? key}) : super(key: key);
+class NotApprehensiblePage extends StatelessWidget {
+  const NotApprehensiblePage({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) 
+  {
     return Scaffold
     (
       // A P P  B A R
@@ -28,28 +28,25 @@ class ApprehensiblePage extends StatelessWidget {
 
       body: Padding
       (
-        
         padding: EdgeInsets.fromLTRB(15.w, 40.h, 0, 20),
-
         child: Column
         (
-          // mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: 
           [
-            // A P P R E H E N S I B L E
+            // N O T  A P P R E H E N S I B L E
             Center
             (
               child: Text
               (
-                "Apprehensible",
-                style: Functions().Apprehensible(),
-              ),
+                "Not Apprehensible",
+                style: Functions().notApprehensible(),
+              )
             ),
 
             SizedBox(height: 40.h,),
 
-            CardApprhnsbleExplain(),
+            CardNtApprhnsbleExplain(),
 
             SizedBox(height: 40.h,),
 
@@ -57,8 +54,8 @@ class ApprehensiblePage extends StatelessWidget {
             const Center(child: NextButtn()),
           ],
         )
-      )
 
+      ),
     );
   }
 }

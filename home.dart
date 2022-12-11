@@ -3,6 +3,7 @@ import 'package:user_interface_quiz_app/RESPONSIVE%20LAYOUT/SMALL%20MOBILE%20LAY
 
 import 'RESPONSIVE LAYOUT/LONG MOBILE LAYOUT/home_ipadpage.dart';
 import 'RESPONSIVE LAYOUT/SMALL MOBILE LAYOUT/HOME iPad Pro/APPREHENSIBLE PAGE/home_apprehensible_page.dart';
+import 'RESPONSIVE LAYOUT/SMALL MOBILE LAYOUT/HOME iPad Pro/NOT APPREHENSIBLE PAGE/home_not_apprehensible_page.dart';
 import 'RESPONSIVE LAYOUT/responsive_layout.dart';
 
 class Home extends StatefulWidget 
@@ -18,7 +19,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return const Scaffold
     (
-      body: ReponsiveLayout(mobileLayout: ApprehensiblePage(), LongMobileLayout: HomeiPadProLong(),)
+      body: ReponsiveLayout(mobileLayout: HomeiPadProSmall(), LongMobileLayout: HomeiPadProLong(),)
     );
   }
 }

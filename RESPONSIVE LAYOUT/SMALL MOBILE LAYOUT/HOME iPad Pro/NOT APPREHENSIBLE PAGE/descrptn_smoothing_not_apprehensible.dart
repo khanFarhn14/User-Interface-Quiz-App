@@ -2,24 +2,27 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_corner/smooth_corner.dart';
 import '../../../../functions.dart';
-import '../card_apprehensible.dart';
+import '../APPREHENSIBLE PAGE/card_apprehensible_explain.dart';
 
-double height = 160.h;
+double height = 120.h;
+
 
 // ignore: must_be_immutable
-class DescrptnCardApprnhsble extends StatelessWidget 
+class DescrptnCardNtApprnhsble extends StatelessWidget 
 {
-  const DescrptnCardApprnhsble({Key? key}) : super(key: key);
+  int spacing = 10;
+  DescrptnCardNtApprnhsble({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return SmoothContainer
     (
       // D E C O R A T I O N  O F  D E S C R I P T I O N  C A R D
-      width: CardApprhnsble().cardWidth,
+      width: CardApprhnsbleExplain().cardWidth,
       height: height,
-      
+
       smoothness: 0.9,
-      
+
       borderRadius: BorderRadius.only
       (
         bottomLeft: Radius.circular(15.r),
@@ -30,21 +33,21 @@ class DescrptnCardApprnhsble extends StatelessWidget
       // // C O N T E N T
       // child: Padding
       // (
-      //   padding: EdgeInsets.symmetric(vertical: spacing.w,horizontal: 10.w),
+      //   padding: EdgeInsets.symmetric(vertical: spacing.w,horizontal: 17.w),
 
-      //   child: ApprnhnsbleDescrptn(),
+      //   child: NotApprnhnsbleDescrptn(),
       // ),
     );
   }
 }
 
 
-// A P R E H E N S I B L E  D E S C R I P T I O N
+// N O T  A P P R E H E N S I B L E  D E S C R I P T I O N
 // ignore: must_be_immutable
-class ApprnhnsbleDescrptn extends StatelessWidget
+class NotApprnhnsbleDescrptn extends StatelessWidget
 {
-  int spacing = 30;
-  ApprnhnsbleDescrptn({Key? key}) : super(key: key);
+  int spacing = 10;
+  NotApprnhnsbleDescrptn({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) 
@@ -55,8 +58,7 @@ class ApprnhnsbleDescrptn extends StatelessWidget
       mainAxisAlignment: MainAxisAlignment.center,
       children: 
       [
-        // P R O D U C T  H E A D I N G
-        // i P a d  P r o
+        
         Container
         (
           padding: const EdgeInsets.all(5.0),
@@ -64,17 +66,27 @@ class ApprnhnsbleDescrptn extends StatelessWidget
           (
             border: Border.all
             (
-              color: Functions().right,
+              color: Functions().wrong,
               width: 1.4
             ),
             borderRadius: BorderRadius.circular(4.5),
           ),
-
-          child: Text
+          child: Row
           (
-            "iPad Pro",
-            style: Functions().contntHedng()
-          )
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children:
+            [
+              // P R O D U C T  H E A D I N G
+              Text("iPad Pro",style: Functions().contntHedng()),
+
+              // P R I C E
+              Text
+              (
+                "\$799",
+                style: Functions().contntHedng()
+              ),
+            ]
+          ),
         ),
 
         SizedBox(height: spacing.w,),//Can't Constant this value because it is dynamic
@@ -102,19 +114,8 @@ class ApprnhnsbleDescrptn extends StatelessWidget
           )
         ),
 
-        SizedBox(height: spacing.w,),//Can't Constant this value because it is dynamic
+        // SizedBox(height: spacing.w,),//Can't Constant this value because it is dynamic
 
-        // P R I C E
-        Text
-        (
-          "\$799",
-          style: TextStyle
-          (
-            fontFamily: 'InterSemiBold',
-            fontSize: 12.sp,
-            color: Functions().secondary.withOpacity(0.7),
-          )
-        ),
       ],
     );
   }
