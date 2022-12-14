@@ -29,7 +29,7 @@ class ApprehensiblePage extends StatelessWidget {
       body: Padding
       (
         
-        padding: EdgeInsets.fromLTRB(15.w, 40.h, 0, 20),
+        padding: EdgeInsets.fromLTRB(15.w, 40.h, 15.w, 20),
 
         child: Column
         (
