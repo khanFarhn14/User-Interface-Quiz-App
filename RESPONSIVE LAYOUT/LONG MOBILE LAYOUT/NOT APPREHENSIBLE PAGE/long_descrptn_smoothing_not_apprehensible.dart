@@ -2,23 +2,29 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_corner/smooth_corner.dart';
 import '../../../../functions.dart';
-import '../APPREHENSIBLE PAGE/card_apprehensible_explain.dart';
-
-double height = 120.h;
+import 'long_card_not_apprehensible_explain.dart';
+double height = 105.h;
 
 
 // ignore: must_be_immutable
-class DescrptnCardNtApprnhsble extends StatelessWidget 
+class LongDescrptnCardNtApprnhsble extends StatefulWidget 
 {
+
+  LongDescrptnCardNtApprnhsble({Key? key}) : super(key: key);
+
+  @override
+  State<LongDescrptnCardNtApprnhsble> createState() => _LongDescrptnCardNtApprnhsbleState();
+}
+
+class _LongDescrptnCardNtApprnhsbleState extends State<LongDescrptnCardNtApprnhsble> {
   int spacing = 10;
-  DescrptnCardNtApprnhsble({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return SmoothContainer
     (
       // D E C O R A T I O N  O F  D E S C R I P T I O N  C A R D
-      width: CardApprhnsbleExplain().cardWidth,
+      width: 212.w,
       height: height,
 
       smoothness: 0.9,

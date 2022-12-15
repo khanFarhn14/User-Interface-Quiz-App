@@ -3,17 +3,27 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:figma_squircle/figma_squircle.dart';
 import '../../../../functions.dart';
-import 'descrptn_smoothing_apprehensible.dart';
+import 'long_descrptn_smoothing_apprehensible.dart';
 
 double gapBetwnRow = 5;
 double spacingInDescrptn = 10;
 // ignore: must_be_immutable
-class CardApprhnsbleExplain extends StatelessWidget 
+class LongCardApprhnsbleExplain extends StatefulWidget 
 {
-  CardApprhnsbleExplain({Key? key}) : super(key: key);
-  double cardWidth = 212.w;
-  double cardHeight = 360.h;
+  double cardWidth;
+  double cardHeight;
+  LongCardApprhnsbleExplain({Key? key, required this.cardWidth, required this.cardHeight}) : super(key: key);
 
+  @override
+  // ignore: no_logic_in_create_state
+  State<LongCardApprhnsbleExplain> createState() => _LongCardApprhnsbleExplainState(cardWidth, cardHeight);
+}
+
+class _LongCardApprhnsbleExplainState extends State<LongCardApprhnsbleExplain> 
+{
+  late double cardWidth;
+  late double cardHeight;
+  _LongCardApprhnsbleExplainState(this.cardWidth, this.cardHeight);
 
   @override
   Widget build(BuildContext context) 
@@ -88,7 +98,7 @@ class CardApprhnsbleExplain extends StatelessWidget
             children:
             [
               const SizedBox(height: 20,),
-              Image.asset('assets/iPad Pro.jpg', width: 150.w)
+              Image.asset('assets/iPad Pro.jpg', width: 160.w)
             ]
           ),
         ),
@@ -331,6 +341,8 @@ class ExplanationPart extends StatelessWidget {
                 ),
               ],
             )
+
+            
           ],
         ),
       )

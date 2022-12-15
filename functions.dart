@@ -110,7 +110,7 @@ class NextButtn extends StatelessWidget {
     return SmoothContainer
     (
       width: 75.w,
-      height: 60.h,
+      height: 50.h,
       color: Functions().secondary,
       smoothness: 0.9,
       borderRadius: BorderRadius.circular(10.r), //here didn't verify

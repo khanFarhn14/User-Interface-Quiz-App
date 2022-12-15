@@ -82,7 +82,7 @@ class CardApprhnsble extends StatelessWidget
             children:
             [
               const SizedBox(height: 20,),
-              Image.asset('assets/iPad Pro.jpg', width: 150.w,height: 158.09.h,)
+              Image.asset('assets/iPad Pro.jpg', width: 150.w)
             ]
           ),
         ),

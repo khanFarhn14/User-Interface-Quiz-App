@@ -11,7 +11,7 @@ class ReponsiveLayout extends StatelessWidget {
     (
       builder: (context, constraints)
       {
-        if(constraints.maxHeight < 700)
+        if(constraints.maxHeight <= 700)
         {
           return mobileLayout;
         }else
