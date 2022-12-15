@@ -20,17 +20,7 @@ class _ApprehensiblePageLongState extends State<ApprehensiblePageLong>
     return Scaffold
     (
       // A P P  B A R
-      appBar: AppBar
-      (
-        elevation: 0,
-        title:  Text
-        (
-          "User Interface Quiz",
-          style: Functions().appBarHeadng(),
-        ),
-        centerTitle: true,
-        backgroundColor: Functions().secondary,
-      ),
+      appBar: appBarHeadng(),
 
       backgroundColor: Functions().dominant,
 
@@ -63,11 +53,7 @@ class _ApprehensiblePageLongState extends State<ApprehensiblePageLong>
                 // A P P R E H E N S I B L E
                 Center
                 (
-                  child: Text
-                  (
-                    "Apprehensible",
-                    style: Functions().Apprehensible(),
-                  ),
+                  child: apprehensible(),
                 ),
       
                 SizedBox(height: 40.h,),

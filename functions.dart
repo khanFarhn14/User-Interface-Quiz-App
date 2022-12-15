@@ -125,3 +125,49 @@ class NextButtn extends StatelessWidget {
     );
   }
 }
+
+//  U S E R  I N T E R F A C E  Q U I Z
+AppBar appBarHeadng ()
+{
+  return AppBar
+  (
+    elevation: 0,
+    title:  Text
+    (
+      "User Interface Quiz",
+      style: Functions().appBarHeadng(),
+    ),
+    centerTitle: true,
+    backgroundColor: Functions().secondary,
+  );
+}
+
+// W H I C H  U I  I S  A P P R E H E N S I B L E
+Text question ()
+{
+  return Text
+  (
+    "Which UI is Apprehensible ?",
+    style: Functions().question()
+  );
+}
+
+// A P P R E H E N S I B L E
+Text apprehensible()
+{
+  return Text
+  (
+    "Apprehensible",
+    style: Functions().Apprehensible(),
+  );
+}
+
+//  N O T  A P P R E H E N S I B L E
+Text ntApprehensible()
+{
+  return Text
+  (
+    "Not Apprehensible",
+    style: Functions().notApprehensible(),
+  );
+}

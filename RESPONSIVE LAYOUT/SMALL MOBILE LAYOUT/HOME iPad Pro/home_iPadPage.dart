@@ -21,17 +21,7 @@ class _HomeiPadProSmallState extends State<HomeiPadProSmall> {
     return Scaffold
     (
       // A P P  B A R
-      appBar: AppBar
-      (
-        elevation: 0,
-        title:  Text
-        (
-          "User Interface Quiz",
-          style: Functions().appBarHeadng(),
-        ),
-        centerTitle: true,
-        backgroundColor: Functions().secondary,
-      ),
+      appBar: appBarHeadng(),
 
       backgroundColor: Functions().dominant,
 
@@ -46,11 +36,7 @@ class _HomeiPadProSmallState extends State<HomeiPadProSmall> {
             SizedBox(height: 30.h,),
             Center
             (
-              child: Text
-              (
-                "Which UI is Apprehensible ?",
-                style: Functions().question()
-              ),
+              child: question()
             ),
 
             SizedBox(height: 30.h,),

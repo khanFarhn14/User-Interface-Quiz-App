@@ -12,17 +12,7 @@ class NotApprehensiblePage extends StatelessWidget {
     return Scaffold
     (
       // A P P  B A R
-      appBar: AppBar
-      (
-        elevation: 0,
-        title:  Text
-        (
-          "User Interface Quiz",
-          style: Functions().appBarHeadng(),
-        ),
-        centerTitle: true,
-        backgroundColor: Functions().secondary,
-      ),
+      appBar: appBarHeadng(),
 
       backgroundColor: Functions().dominant,
 
@@ -37,11 +27,7 @@ class NotApprehensiblePage extends StatelessWidget {
             // N O T  A P P R E H E N S I B L E
             Center
             (
-              child: Text
-              (
-                "Not Apprehensible",
-                style: Functions().notApprehensible(),
-              )
+              child: ntApprehensible()
             ),
 
             SizedBox(height: 40.h,),
