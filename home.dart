@@ -4,6 +4,7 @@ import 'package:user_interface_quiz_app/RESPONSIVE%20LAYOUT/SMALL%20MOBILE%20LAY
 import 'RESPONSIVE LAYOUT/LONG MOBILE LAYOUT/APPREHENSIBLE PAGE/long_home_apprehensible_page.dart';
 import 'RESPONSIVE LAYOUT/LONG MOBILE LAYOUT/NOT APPREHENSIBLE PAGE/long_home_not_apprehensible_page.dart';
 import 'RESPONSIVE LAYOUT/LONG MOBILE LAYOUT/home_ipadpage.dart';
+import 'RESPONSIVE LAYOUT/SMALL MOBILE LAYOUT/HOME IPAD PRO/IMPORTANT/home_importantPage.dart';
 import 'RESPONSIVE LAYOUT/SMALL MOBILE LAYOUT/HOME iPad Pro/APPREHENSIBLE PAGE/home_apprehensible_page.dart';
 import 'RESPONSIVE LAYOUT/SMALL MOBILE LAYOUT/HOME IPAD PRO/NOT APPREHENSIBLE PAGE/home_not_apprehensible_page.dart';
 import 'RESPONSIVE LAYOUT/responsive_layout.dart';

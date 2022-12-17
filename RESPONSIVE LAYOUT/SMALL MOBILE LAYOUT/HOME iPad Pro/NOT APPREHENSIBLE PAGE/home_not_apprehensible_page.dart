@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../functions.dart';
+import '../IMPORTANT/home_importantPage.dart';
 import 'card_not_apprehensible_explain.dart';
 
 class NotApprehensiblePage extends StatelessWidget {
@@ -37,7 +38,17 @@ class NotApprehensiblePage extends StatelessWidget {
             SizedBox(height: 40.h,),
 
             // N E X T  B U T T O N
-            const Center(child: NextButtn()),
+            Center
+            (
+              child: InkWell
+              (
+                onTap:()
+                {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeImportant()));
+                },
+                child: const NextButtn()
+              )
+            ),
           ],
         )
 

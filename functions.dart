@@ -10,6 +10,7 @@ class Functions
   final descrptnCard = const Color(0xffDEDFE1);
   final wrong = const Color(0xffA41215);
   final right = const Color(0xff00C013);
+  final card = const Color(0xffDEDFE1);
 
   // U S E R  I N T E R F A C E  Q U I Z
   TextStyle appBarHeadng()

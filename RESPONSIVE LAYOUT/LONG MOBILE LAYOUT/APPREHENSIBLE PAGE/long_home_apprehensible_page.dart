@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../functions.dart';
+import '../../SMALL MOBILE LAYOUT/HOME IPAD PRO/IMPORTANT/home_importantPage.dart';
 import 'long_card_apprehensible_explain.dart';
 
 class ApprehensiblePageLong extends StatefulWidget {
@@ -63,7 +64,17 @@ class _ApprehensiblePageLongState extends State<ApprehensiblePageLong>
                 SizedBox(height: 40.h,),
       
                 // N E X T  B U T T O N
-                const Center(child: NextButtn()),
+                Center
+                (
+                  child: InkWell
+                  (
+                    onTap:()
+                    {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeImportant()));
+                    },
+                    child: const NextButtn()
+                  )
+                ),
               ],
             )
           );
