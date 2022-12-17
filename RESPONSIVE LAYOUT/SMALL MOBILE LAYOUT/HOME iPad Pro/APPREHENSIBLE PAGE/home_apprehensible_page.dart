@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import '../../../../functions.dart';
 import '../IMPORTANT/home_importantPage.dart';
 import 'card_apprehensible_explain.dart';

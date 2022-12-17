@@ -1,11 +1,11 @@
 import 'package:figma_squircle/figma_squircle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:user_interface_quiz_app/RESPONSIVE%20LAYOUT/SMALL%20MOBILE%20LAYOUT/HOME%20IPAD%20PRO/IMPORTANT/READABILITY/readability_page.dart';
-import 'package:user_interface_quiz_app/RESPONSIVE%20LAYOUT/SMALL%20MOBILE%20LAYOUT/HOME%20IPAD%20PRO/IMPORTANT/readability_proper.dart';
-import 'package:user_interface_quiz_app/RESPONSIVE%20LAYOUT/SMALL%20MOBILE%20LAYOUT/HOME%20IPAD%20PRO/IMPORTANT/readibility_improper.dart';
 import 'package:user_interface_quiz_app/functions.dart';
 import 'READABILITY IMPROPER/improper_readability.dart';
+import 'READABILITY/readability_page.dart';
+import 'readability_proper.dart';
+import 'readibility_improper.dart';
 
 class HomeImportant extends StatefulWidget {
   const HomeImportant({Key? key}) : super(key: key);

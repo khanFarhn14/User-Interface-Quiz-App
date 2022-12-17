@@ -1,11 +1,9 @@
 import 'package:figma_squircle/figma_squircle.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import 'descrptn_smoothing.dart';
 
+// ignore: must_be_immutable
 class CardNtApprhnsble extends StatelessWidget 
 {
   CardNtApprhnsble({Key? key}) : super(key: key);

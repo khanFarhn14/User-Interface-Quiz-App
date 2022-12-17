@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:user_interface_quiz_app/RESPONSIVE%20LAYOUT/SMALL%20MOBILE%20LAYOUT/HOME%20IPAD%20PRO/NOT%20APPREHENSIBLE%20PAGE/home_not_apprehensible_page.dart';
-
 import '../../../functions.dart';
 import 'APPREHENSIBLE PAGE/home_apprehensible_page.dart';
+import 'NOT APPREHENSIBLE PAGE/home_not_apprehensible_page.dart';
 import 'card_apprehensible.dart';
 import 'card_not_apprehensible.dart';
 

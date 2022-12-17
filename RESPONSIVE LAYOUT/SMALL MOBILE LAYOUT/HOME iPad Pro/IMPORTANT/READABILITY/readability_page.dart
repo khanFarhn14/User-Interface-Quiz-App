@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:user_interface_quiz_app/functions.dart';
+import '../../SONY/sony_home_page.dart';
 import '../readability_proper.dart';
 
 class ReadabilityPage extends StatelessWidget {
@@ -44,7 +45,14 @@ class ReadabilityPage extends StatelessWidget {
 
             SizedBox(height: 183.h,),
 
-            const NextButtn(),
+            InkWell
+            (
+              onTap:()
+              {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const SonyHomePage()));
+              },
+              child: NextButtn()
+            ),
           ],
         ),
       )

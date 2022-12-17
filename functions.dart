@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_corner/smooth_corner.dart';
+
 class Functions
 {
   // C o l o r  S e t u p
@@ -170,5 +171,20 @@ Text ntApprehensible()
   (
     "Not Apprehensible",
     style: Functions().notApprehensible(),
+  );
+}
+
+//  Sony Name
+Text sonyName()
+{
+  return Text
+  (
+    "Sony WHXMO3311",
+    style: TextStyle
+    (
+      fontFamily: 'InterSemiBold',
+      fontSize: 10.sp,
+      color: Functions().secondary
+    ),
   );
 }
